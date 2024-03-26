@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primăria Slatina</title>
+<style>
+    * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle; max-width: 100%;} /* Setează lățimea maximă a imaginilor la 50% */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%; /* Modificarea pentru a ocupa toata latimea */
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+body {
+    font-family: Times New Roman, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://reporter24.ro/wp-content/uploads/2019/10/primaria-slatina.jpg.webp); 
+    background-size: cover; /* Pentru a acoperi întreaga suprafață a ecranului */
+    background-attachment: fixed; /* Asigură că imaginea de fundal rămâne fixă atunci când derulați pagina */
+}
+header {
+    background-color: rgba(25, 25, 112); /* Adăugarea opacității cu rgba() */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+header img {
+    max-width: 60px;
+    margin-right: 20px;
+}
+.container {
+    font-family: Times New Roman, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Adăugarea opacității cu rgba() */
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adăugați o umbra */
+    position: relative; /* Adaugăm poziționare relativă pentru a putea poziționa elementele absolute */
+}
+.container section {
+    margin-bottom: 20px;
+}
+.municipiu {
+    font-size: 24px;
+}
+.title1 {
+      background-color: rgba(239, 239, 246, 0.792);
+      margin: 0 auto; 
+    width: 300px; /* Setarea latimii */
+    height: 30px;
+    text-align: center;
+}
+.title2 {
+   color: rgb(139, 0, 0);
+      margin: 0 auto;
+
+    text-align: center;
+}
+.title {
+     
+    text-align: center; /* Centrare pe mijloc */
+}
+.black-and-white {
+  filter: grayscale(100%);
+}
+
+.text-container {
+  display: flex;
+  position: absolute;
+  bottom: 0.00001px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  /* justify-content: space-around; */ /* Eliminăm această proprietate pentru a plasa cutiile de text unul sub altul */
+}
+
+.text-box {
+  width: 400px; /* Setează lățimea casetei de text la 600px */
+  background-color:rgba(255, 255, 255, 0.8); /* Fundal alb */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  margin: 0 auto 20px; /* Spațiere între cutii și centrată pe orizontală */
+  text-align: center; /* Centrare text */
+}
+
+
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/ROU_OT_Slatina_CoA.png" alt="">
+    <h1 class="municipiu">Municipiul Slatina</h1>
+</header>
+
+<div class="container">
+   
+ <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 /
+/ 3</div>
+      <img src="https://cdn.flightsim.to/images/26/slatina-romania-2463-1690473326-m03jZ.jpg?width=1400&auto_optimize=medium" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://cdn.flightsim.to/images/26/slatina-romania-2463-1690473326-m03jZ.jpg?width=1400&auto_optimize=medium" style="width:100%" class="black-and-white">
+<div class="text">Caption Two</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+<div class="text-container">
+  
+  <div class="text-box">
+    <h3>Conducerea instituției</h3>
+    <p>Primar: Emil Mot</p>
+    <p>Viceprimar: Gigi Valceleanu</p>
+    <p>Viceprimar: Constantin Vasilescu</p>
+  </div>
+  <div class="text-box">
+    <h3>Program de lucru</h3>
+    <p>Luni: 09:00 - 12:00</p>
+    <p>Marti 09:30 - 12:00</p>
+    <p>Miercuri: 09:30 - 14:00 </p>
+    <p>Joi:      09:30 - 14:00 </p>
+    <p>Vineri:  09:30 - 14:00 </p>
+    <p>Sambata, Duminica: Fara program cu publicul</p>
+  </div>
+  <div class="text-box">
+    <h3>Conexiuni utile</h3>
+    <p>Depozitul de stocare nr. 3</p>
+    <p>Scoala nr. 2 </p>
+    <p>Gradinita cu program preungit nr. 2</p>
+  </div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<section>
+    <br>
+    <h2 class="title1">Anunțuri importante</h2>
+    <br>
+    <p class="title2">In cartierul ALRO, in perioada 12 Ian 2024 - 30 Ian 2024 va fi oprita furnizarea apei din cauza unor lucrari la instalatia centrala.</p>
+    <p class="title2">Pentru eliberarea certificatelor fiscale aferenta nului 2005 - 2006, va puteti adresa la sediul asociatiei de locatari pana la data de 28 Aprilie 2024.</p>
+    <p class="title2">In perioada 22-25 Martie 2024 se vor efectua lucrari la instalatia de gaze in cartierele 1 si 2. Va rugam sa aveti mare atentie in aceasta situatie. </p>
+    <p class="title2">La data de 14 Iunie 2025 se vor desfasura alegeri la asociatia de locatati. Va rog sa fiti prezenti pentru a anu fi slterate rezultatele acestora</p>
+    <br>
+    <br>
+</section>
+</div>
+</body>
+</html>
